@@ -74,7 +74,11 @@ const Footer = () => {
 		<footer className='bg-gray-100/10 w-full p-2 sm:px-0 flex flex-col item-center'>
 			<section className='sm:grid-cols-3 gap-4 sm:gap-8 lg:gap-16 mt-2 mx-auto max-w-[1400px] w-full grid py-4 lg:py-16'>
 				<Link href='/' className='col-span-1'>
+<<<<<<< HEAD
 					<LogoImage className='w-[40px] sm:w-[80px] h-fit' />
+=======
+					<LogoImage className='w-[50px] sm:w-[80px] h-fit' />
+>>>>>>> 96ff1b2a5053b14d6ace51d09d39c294be9ce466
 				</Link>
 
 				<div className='flex sm:items-center w-fit sm:mx-auto gap-6'>

@@ -55,7 +55,11 @@
 .link {
     width: 48px;
     height: 48px;
+<<<<<<< HEAD
     background-color: #427695;
+=======
+    background-color: #B88E2F;
+>>>>>>> 96ff1b2a5053b14d6ace51d09d39c294be9ce466
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,7 +68,11 @@
 }
 
 .link:hover {
+<<<<<<< HEAD
     background-color: #193138;
+=======
+    background-color: #8f6f26;
+>>>>>>> 96ff1b2a5053b14d6ace51d09d39c294be9ce466
 }
 
 .queue {
@@ -99,7 +107,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     color: #427695;
+=======
+    color: #B88E2F;
+>>>>>>> 96ff1b2a5053b14d6ace51d09d39c294be9ce466
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: background-color 0.2s ease-in-out;
 }
@@ -132,7 +144,11 @@
 }
 
 .activeDot {
+<<<<<<< HEAD
     background-color: #427695;
+=======
+    background-color: #B88E2F;
+>>>>>>> 96ff1b2a5053b14d6ace51d09d39c294be9ce466
 }
 
 @media (max-width: 1024px) {

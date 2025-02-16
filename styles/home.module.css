@@ -1,4 +1,5 @@
 .header {
+<<<<<<< HEAD
   background-image: url("/public/images/backgroundImg.png");
   object-fit: cover;
   height: 100vh;
@@ -24,3 +25,11 @@
     background-position: calc(200px + 100%) 0;
   }
 } */
+=======
+	background-image: url("/public/images/backgroundImg.png");
+    object-fit: cover;
+	height: 100vh;
+	width: 100px;
+    z-index: 100;
+}
+>>>>>>> 96ff1b2a5053b14d6ace51d09d39c294be9ce466

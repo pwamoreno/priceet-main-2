@@ -29,7 +29,11 @@ module.exports = {
 					100: "#E4E2DA", // Very light gray with warmth
   					200: "#B0AC9F", // Muted medium gray
 				},
+<<<<<<< HEAD
 				primary: "#427695", // Deep gold for primary accents
+=======
+				primary: "#B88E2F", // Deep gold for primary accents
+>>>>>>> 96ff1b2a5053b14d6ace51d09d39c294be9ce466
 				effect: "#FFD700", // Golden yellow for highlighting effects
 				primaryColor: {
 					100: "#00BFFF", // Sky blue

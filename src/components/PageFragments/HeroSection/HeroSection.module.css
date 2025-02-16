@@ -1,6 +1,10 @@
 .wrapper {
     width: 100%;
+<<<<<<< HEAD
     background-image: url('./slide-1.jpg');
+=======
+    background-image: url('./background-image.png');
+>>>>>>> 96ff1b2a5053b14d6ace51d09d39c294be9ce466
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
