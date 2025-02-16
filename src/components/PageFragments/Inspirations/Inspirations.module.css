@@ -52,7 +52,7 @@
 .button {
     margin: 0;
     margin-top: 20px;
-    background-color: #B88E2F;
+    background-color: #427695;
     padding: 12px 36px;
     width: fit-content;
     font-weight: 600;
@@ -63,7 +63,7 @@
 }
 
 .button:hover {
-    background-color: #8f6f26;
+    background-color: #193138;
 }
 
 .slider_wrapper {

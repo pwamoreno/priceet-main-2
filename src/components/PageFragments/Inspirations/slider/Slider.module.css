@@ -55,7 +55,7 @@
 .link {
     width: 48px;
     height: 48px;
-    background-color: #B88E2F;
+    background-color: #427695;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,7 +64,7 @@
 }
 
 .link:hover {
-    background-color: #8f6f26;
+    background-color: #193138;
 }
 
 .queue {
@@ -99,7 +99,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #B88E2F;
+    color: #427695;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: background-color 0.2s ease-in-out;
 }
@@ -132,7 +132,7 @@
 }
 
 .activeDot {
-    background-color: #B88E2F;
+    background-color: #427695;
 }
 
 @media (max-width: 1024px) {

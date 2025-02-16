@@ -321,7 +321,7 @@ const Header = () => {
 								className='text-3xl text-primary hover:scale-105 transition-[.5]'
 							/>
 							<Link href='/' className='col-span-1'>
-								<LogoImage className='w-[60px] h-fit' />
+								<LogoImage className='w-[35px] h-fit' />
 							</Link>
 						</div>
 
@@ -431,7 +431,7 @@ const Header = () => {
 			>
 				<div className='mt-4 flex w-full justify-between items-center'>
 					<Link href='/' className=''>
-						<LogoImage className='w-[60px] lg:w-[80px] h-fit' />
+						<LogoImage className='w-[40px] lg:w-[40px] h-fit' />
 					</Link>
 
 					<GrClose
