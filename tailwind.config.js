@@ -24,7 +24,7 @@ module.exports = {
 			},
 			colors: {
 				light: "#E8F0F9", // Cool light blue
-				background: "#E3ECF8", // Slightly darker background with a bluish tones
+				background: "#E3ECF8", // Slightly darker background with a bluish tone
 				gray: {
 					100: "#E4E2DA", // Very light gray with warmth
   					200: "#B0AC9F", // Muted medium gray
