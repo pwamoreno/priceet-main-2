@@ -185,11 +185,7 @@ const Header = () => {
 				<div className='hidden slg:grid grid-cols-4 items-center w-full py-4 max-w-[1400px] z-30 px-5 xl:px-0'>
 					<div className='flex items-center gap-12'>
 						<Link href='/' className='col-span-1'>
-<<<<<<< HEAD
 							<LogoImage className='w-[40px] h-fit' />
-=======
-							<LogoImage className='w-[80px] h-fit' />
->>>>>>> 96ff1b2a5053b14d6ace51d09d39c294be9ce466
 						</Link>
 						<div className='flex items-center gap-2.5'>
 							<span>Pages</span>
@@ -325,11 +321,7 @@ const Header = () => {
 								className='text-3xl text-primary hover:scale-105 transition-[.5]'
 							/>
 							<Link href='/' className='col-span-1'>
-<<<<<<< HEAD
 								<LogoImage className='w-[35px] h-fit' />
-=======
-								<LogoImage className='w-[60px] h-fit' />
->>>>>>> 96ff1b2a5053b14d6ace51d09d39c294be9ce466
 							</Link>
 						</div>
 
@@ -439,11 +431,7 @@ const Header = () => {
 			>
 				<div className='mt-4 flex w-full justify-between items-center'>
 					<Link href='/' className=''>
-<<<<<<< HEAD
 						<LogoImage className='w-[40px] lg:w-[40px] h-fit' />
-=======
-						<LogoImage className='w-[60px] lg:w-[80px] h-fit' />
->>>>>>> 96ff1b2a5053b14d6ace51d09d39c294be9ce466
 					</Link>
 
 					<GrClose

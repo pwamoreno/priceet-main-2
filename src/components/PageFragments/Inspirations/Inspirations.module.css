@@ -6,11 +6,7 @@
     align-items: center;
     margin-top: 80px;
     margin-bottom: 80px;
-<<<<<<< HEAD
     background-color: #FAFAFA;
-=======
-    background-color: #FCF8F3;
->>>>>>> 96ff1b2a5053b14d6ace51d09d39c294be9ce466
     position: relative;
 }
 
@@ -56,11 +52,7 @@
 .button {
     margin: 0;
     margin-top: 20px;
-<<<<<<< HEAD
     background-color: #427695;
-=======
-    background-color: #B88E2F;
->>>>>>> 96ff1b2a5053b14d6ace51d09d39c294be9ce466
     padding: 12px 36px;
     width: fit-content;
     font-weight: 600;
@@ -71,11 +63,7 @@
 }
 
 .button:hover {
-<<<<<<< HEAD
     background-color: #193138;
-=======
-    background-color: #8f6f26;
->>>>>>> 96ff1b2a5053b14d6ace51d09d39c294be9ce466
 }
 
 .slider_wrapper {
