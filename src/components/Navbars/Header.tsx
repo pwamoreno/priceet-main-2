@@ -182,12 +182,12 @@ const Header = () => {
 				}`}
 			>
 				{/* Desktop */}
-				<div className='hidden slg:grid grid-cols-4 items-center w-full py-4 max-w-[1400px] z-30 px-5 xl:px-0'>
+				<div className='hidden slg:flex justify-between items-center w-full py-4 max-w-[1400px] z-30 px-5 xl:px-0'>
 					<div className='flex items-center gap-12'>
 						<Link href='/' className='col-span-1'>
 							<LogoImage className='w-[40px] h-fit' />
 						</Link>
-						<div className='flex items-center gap-2.5'>
+						<div className='flex items-center gap-2'>
 							<span>Pages</span>
 							<div
 								className='p-2 hover:bg-primary/20 rounded-full cursor-pointer hover:scale-110 transition-[.4]'
@@ -199,7 +199,7 @@ const Header = () => {
 					</div>
 					<div className='flex h-10 col-span-2'>
 						<SearchInput
-							className='flex-1 text-base text-black/70 pl-4 pr-2 !py-1.5 h-[2.8rem] bg-gray-100/30 !rounded-full outline-none focus:border-primaryColor-100 focus:ring-1 transition'
+							// className='flex-1 text-base text-black/70 pl-4 pr-2 !py-1.5 h-[2.8rem] bg-gray-100/30 !rounded-full outline-none focus:border-primaryColor-100 focus:ring-1 transition'
 							placeholder='Search for products'
 							searchValue={searchValue}
 							setSearchQuery={setSearchValue}
@@ -409,9 +409,9 @@ const Header = () => {
 							</div>
 						</div>
 					</div>
-					<div className='flex w-full h-10 mt-2 px-1'>
+					<div className='flex justify-center w-full h-10 mt-2 px-1'>
 						<SearchInput
-							className='flex-1 text-base text-black/70 pl-4 pr-2 !py-1.5 h-[2.8rem] bg-gray-100/30 !rounded-full outline-none focus:border-primaryColor-100 focus:ring-1 transition'
+							// className='flex-1 text-base text-black/70 pl-4 pr-2 !py-1.5 h-[2.8rem] bg-gray-100/30 !rounded-full outline-none focus:border-primaryColor-100 focus:ring-1 transition'
 							placeholder='Search for products'
 							searchValue={searchValue}
 							setSearchQuery={setSearchValue}

@@ -1,12 +1,13 @@
+"use client"
+
 import React, { useState } from "react";
 import { ImSpinner2 } from "react-icons/im";
-import { FaSearch } from "react-icons/fa";
 import { IoSearchOutline } from "react-icons/io5";
 
 interface SearchInputProps {
 	placeholder?: string;
 	className?: string;
-	searchValue?: string; // External searchValue
+	searchValue?: string;
 	setSearchQuery: (query: string) => void;
 	isLoading?: boolean;
 	onSearch?: () => void;
@@ -15,23 +16,22 @@ interface SearchInputProps {
 const SearchInput: React.FC<SearchInputProps> = ({
 	placeholder = "Search...",
 	className = "",
-	searchValue: externalSearchValue, // External searchValue prop
+	searchValue: externalSearchValue,
 	setSearchQuery,
 	isLoading = false,
 	onSearch,
 }) => {
-	// Internal state used only if externalSearchValue is not provided
 	const [internalSearchValue, setInternalSearchValue] = useState("");
+	const [isExpanded, setIsExpanded] = useState(false);
 
 	const currentSearchValue = externalSearchValue ?? internalSearchValue;
 
 	const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		const newValue = event.target.value;
-
 		if (externalSearchValue !== undefined) {
-			setSearchQuery(newValue); // Update external state
+			setSearchQuery(newValue);
 		} else {
-			setInternalSearchValue(newValue); // Update internal state
+			setInternalSearchValue(newValue);
 		}
 	};
 
@@ -41,36 +41,47 @@ const SearchInput: React.FC<SearchInputProps> = ({
 		}
 	};
 
-	const handleSearchClick = () => {
-		if (onSearch) {
-			onSearch();
+	const toggleSearch = () => {
+		setIsExpanded((prev) => !prev);
+	};
+
+	const handleBlur = () => {
+		if (!currentSearchValue) {
+			setIsExpanded(false);
 		}
 	};
 
 	return (
-		<div
-			className={`flex items-center border rounded-sm overflow-hidden ${className}`}
-		>
-			<input
-				type='text'
-				placeholder={placeholder}
-				className='flex-1 text-base text-black/70 pl-2 py-1 border-none outline-none bg-transparent transition'
-				value={currentSearchValue}
-				onChange={handleInputChange}
-				onKeyDown={handleKeyDown}
-			/>
-
-			<button
-				type='button'
-				className='ptext-primary font-semibold transition bg-primary hover:text-primaryColor-200 focus:outline-none focus:ring focus:border-blue-300 text-xl size-8 rounded-full'
-				onClick={handleSearchClick}
+		<div className={`relative flex items-center ${className}`}>
+			{/* Search Bar */}
+			<div
+				className={`flex items-center border bg-gray-200 transition-all duration-300 ${
+					isExpanded ? "w-96 px-4 py-2 rounded-full" : "w-10 h-10 p-2 rounded-full bg-transparent"
+				}`}
 			>
-				{isLoading ? (
-					<ImSpinner2 className='animate-spin mx-auto' />
-				) : (
-					<IoSearchOutline className='text-white mx-auto' />
+				{isExpanded && (
+					<input
+						type='text'
+						autoFocus
+						placeholder={placeholder}
+						className='flex-1 bg-transparent outline-none text-base text-black/70 pl-4 pr-2 h-[2rem] w-full !rounded-full transition'
+						// className='flex-1 text-base text-black/70 pl-4 pr-2 !py-1.5 h-[2.8rem] bg-gray-100/30 !rounded-full outline-none focus:border-primaryColor-100 focus:ring-1 transition'
+						value={currentSearchValue}
+						onChange={handleInputChange}
+						onKeyDown={handleKeyDown}
+						onBlur={handleBlur}
+					/>
 				)}
-			</button>
+
+				{/* Search Icon */}
+				<button
+					type='button'
+					className='transition ml-auto'
+					onClick={toggleSearch}
+				>
+					{isLoading ? <ImSpinner2 className='animate-spin' /> : <IoSearchOutline color="#427695" className="size-5" />}
+				</button>
+			</div>
 		</div>
 	);
 };

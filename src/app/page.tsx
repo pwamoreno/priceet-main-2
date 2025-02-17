@@ -35,8 +35,8 @@ const page = () => {
 					<SortedProducts />
 				</div>
 			</main>
-			<Inspirations />
-      		<ShareYourSetup />
+			{/* <Inspirations /> */}
+      		{/* <ShareYourSetup /> */}
 		</AppLayout>
 	);
 };
